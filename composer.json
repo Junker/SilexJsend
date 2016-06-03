@@ -1,0 +1,20 @@
+{
+    "name": "junker/silex-jsend",
+    "description": "Silex JSend Component",
+    "keywords": ["silex","jsend","response"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitry Kosenkov",
+            "email": "dk-junker@ya.ru"
+        }
+    ],
+    "require": {
+        "junker/symfony-jsend-response": "dev-master"
+    },
+    "autoload": {
+        "psr-0" : {
+            "Junker" : "src/"
+        }
+    }
+}
