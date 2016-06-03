@@ -30,21 +30,21 @@ $app->get('/', function() use ($app) {
 	$message = 'Error, total error!';
 	$code = 5;
 
-		return $app->jsend(JSendResponse::STATUS_SUCCESS, $data);
-	#or
-		return $app->jsend(JSendResponse::STATUS_FAIL, $data);
-	#or 
-		return $app->jsend(JSendResponse::STATUS_ERROR, NULL, $message, $code);
-	#or
-		return $app->jsend(JSendResponse::STATUS_ERROR, $data, $message, $code);
-	#or
-		return $app->jsendSuccess($data);
-	#or
-		return $app->jsendFail($data);
-	#or
-		return $app->jsendError($message);
-	#or
-		return $app->jsendError($message, $code, $data);
+	return $app->jsend(JSendResponse::STATUS_SUCCESS, $data);
+#or
+	return $app->jsend(JSendResponse::STATUS_FAIL, $data);
+#or 
+	return $app->jsend(JSendResponse::STATUS_ERROR, NULL, $message, $code);
+#or
+	return $app->jsend(JSendResponse::STATUS_ERROR, $data, $message, $code);
+#or
+	return $app->jsendSuccess($data);
+#or
+	return $app->jsendFail($data);
+#or
+	return $app->jsendError($message);
+#or
+	return $app->jsendError($message, $code, $data);
 });
 
 ```
