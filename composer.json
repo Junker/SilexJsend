@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "junker/symfony-jsend-response": "dev-master"
+        "junker/symfony-jsend-response": "^0.1.0"
     },
     "autoload": {
         "psr-0" : {

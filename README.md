@@ -31,19 +31,19 @@ $app->get('/', function() use ($app) {
 	$code = 5;
 
 	return $app->jsend(JSendResponse::STATUS_SUCCESS, $data);
-#or
+	#or
 	return $app->jsend(JSendResponse::STATUS_FAIL, $data);
-#or 
-	return $app->jsend(JSendResponse::STATUS_ERROR, NULL, $message, $code);
-#or
+	#or 
+	return $app->jsend(JSendResponse::STATUS_ERROR, NULL, $message);
+	#or
 	return $app->jsend(JSendResponse::STATUS_ERROR, $data, $message, $code);
-#or
+	#or
 	return $app->jsendSuccess($data);
-#or
+	#or
 	return $app->jsendFail($data);
-#or
+	#or
 	return $app->jsendError($message);
-#or
+	#or
 	return $app->jsendError($message, $code, $data);
 });
 
