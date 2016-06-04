@@ -13,12 +13,12 @@ trait JSendTrait
         return new JSendResponse($status, $data, $message, $code);
     }
 
-    public function jsendSuccess($data)
+    public function jsendSuccess($data = null)
     {
         return new JSendSuccessResponse($data);
     }
 
-    public function jsendFail($data)
+    public function jsendFail($data = null)
     {
         return new JSendFailResponse($data);
     }
