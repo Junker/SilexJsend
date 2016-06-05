@@ -1,5 +1,5 @@
 <?php
-namespace Junker\Silex;
+namespace Junker\Silex\Application;
 
 use Junker\Symfony\JSendResponse;
 use Junker\Symfony\JSendSuccessResponse;
