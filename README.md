@@ -15,7 +15,7 @@ The best way to install SilexJsend is to use a [Composer](https://getcomposer.or
 
 class Application extends \Silex\Application
 {
-	use \Junker\Silex\JSendTrait;
+	use \Junker\Silex\Application\JSendTrait;
 }
 
 ```
